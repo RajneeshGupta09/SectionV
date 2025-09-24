@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    border-bottom: 2px dotted black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 111, 111);
+}
+
+.nav p {
+    font-size: large;
+    font-style: oblique;
+}
+
+/* Main Content */
+.min {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Card1 */
+.card1 {
+    height: 317px;
+    width: 241px;
+    margin: 60px;
+    position: relative;
+}
+
+.card1 img {
+    height: 317px;
+    width: 241px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card1::after, .card1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: red; */
+    background-image: conic-gradient(from var(--angle), red, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card1::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+
+/* Card2 */
+.card2 {
+    border: 2px solid black;
+    height: 317px;
+    width: 241px;
+    margin: 60px;
+    position: relative;
+}
+
+.card2 img {
+    height: 317px;
+    width: 241px;
+}
+
+@property --angle2{
+    syntax: "<angle2>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card2::after, .card2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: blue;
+    background-image: conic-gradient(from var(--angle2), tranparent 70%, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+.card2::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin2{
+    from{
+        --angle2: 0deg;
+    }
+    to{
+        --angle2: 360deg;
+    }
+}
+
+/* Card3 */
+.card3 {
+    border: 2px solid black;
+    height: 317px;
+    width: 241px;
+    margin: 60px;
+    position: relative;
+}
+
+.card3 img {
+    height: 317px;
+    width: 241px;
+}
+
+.card3::after, .card3::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    background-image: conic-gradient(tranparent 5%, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card3::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+

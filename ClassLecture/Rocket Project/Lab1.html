@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab dated 9/9/25</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500vw;
+            height: 97vh;
+            background-image: url(./Space.png);
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+    
+        }
+
+        .rocket {
+            height: 400px;
+            width: 400px;
+            transform: rotate(48deg);
+            position: absolute;
+            animation: moveRight 3s  forwards;
+           
+        }
+
+        .cody {
+            height: 120px;
+            width: 100px;
+            transform: rotate(337deg);
+            margin-left: 85%;
+            position: absolute;
+            animation: moveUp 5s ;
+        }
+
+        @keyframes moveRight {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 83%;
+            }
+        }
+
+        @keyframes moveUp {
+            from{
+                left: 0;
+            }
+            to{
+                top: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./rocket.png" alt="" class="rocket">
+        <img src="./Cody.png" alt="" class="cody">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows</title>
+
+    <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
+        .container {
+            height: 650px;
+            border: 2px solid black;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        .box{
+            /*
+            Custom variable
+            --primary-color: brown;
+            --custom-width: 330px;
+            width: var(--custom-width);
+            border: 2px solid var(--primary-color);
+            */
+
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /*- - - - - - - - - - - Spread radius---*/
+            box-shadow: 10px 15px 5px 5px var(--primary-color);
+
+            /* box-shadow: 10px 15px brown; Let's add blur radius
+            box-shadow: 10px 15px 50px brown;
+            box-shadow: inset 10px 15px brown; Lets add multiple shadows
+            box-shadow: 10px 15px red, 15px 10px green;*/
+        }
+
+        #head1{
+            text-shadow: 5px 5px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="../Starting ecture/image.jpg" alt="">
+            <h2 id="head1">Hey Box</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint eaque minus molestias aliquam! Quisquam in
+                non, dolores nostrum asperiores corporis cupiditate odit autem delectus voluptatibus! Reiciendis sequi
+                in ipsum expedita.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

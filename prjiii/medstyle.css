@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #242424;
+    background-color: #f7f3f0;
+}
+
+
+.header {
+    background-color: #f7f3f0;
+    padding: 20px 80px;
+    border-bottom: 1px solid black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 16px;
+}
+
+.cta-button {
+    background-color: #1a8917;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 99em;
+}
+
+.cta-button:hover {
+    background-color: #156d13;
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 120px);
+    padding: 0% 20px;
+    background-image: url('./brown-watercolor-leaf-background-aesthetic-autumn-season_53876-129881.avif');
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+.main-heading {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    text-align: left;
+    padding-left: 0;
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 40px;
+}
+
+.start-reading-button {
+    background-color: #1a8917;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 99em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.start-reading-button:hover {
+    background-color: #156d13;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: #f7f3f0 ;
+    border-top: 1px solid black;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 14px;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge project</title>
+
+    <style>
+
+        tr{
+            
+        }
+
+        td{
+            width: 50px;
+            height: 50px;
+            
+        }
+        button{
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+            padding: 15px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td><button onclick="calculation += '0';
+        console.log(calculation)">0</button></td>
+            <td><button onclick="calculation += '1';
+        console.log(calculation)">1</button></td>
+            <td><button onclick="calculation += '2';
+        console.log(calculation)">2</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="calculation += '3';
+        console.log(calculation)">3</button></td>
+            <td><button onclick="calculation += '4';
+        console.log(calculation)">4</button></td>
+            <td><button onclick="calculation += '5';
+        console.log(calculation)">5</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="calculation += '6';
+        console.log(calculation)">6</button></td>
+            <td><button onclick="calculation += '7';
+        console.log(calculation)">7</button></td>
+            <td><button onclick="calculation += '8';
+        console.log(calculation)">8</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="calculation += '9';
+        console.log(calculation)">9</button></td>
+            <td><button onclick="calculation += ' + ';
+        console.log(calculation)">+</button></td>
+            <td><button onclick="calculation -= ' - ';
+        console.log(calculation)">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="calculation += ' * ';
+        console.log(calculation)">*</button></td>
+            <td><button onclick="calculation = eval(calculation);
+        console.log(calculation)">=</button></td>
+            <td><button onclick="calculation = '';
+        console.log(calculation)">C</button></td>
+        </tr>
+    </table>
+
+
+    <script>
+        let calculation = '';
+    </script>
+
+</body>
+
+</html>

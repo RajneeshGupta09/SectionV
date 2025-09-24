@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1.5px solid black;
+        }
+        .container a{
+
+        }
+
+        .medium h2 {
+            font-size: 4rem;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-left: 0px;
+        }
+
+        .medium p {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .medium {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            border-top: 1px solid #e5e5e5;
+            font-size: 0.9rem;
+            color: #666;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Medium</h1>
+
+            <nav class="box1">
+                <a href="#" className="text-sm">Our story</a>
+                <a href="#" className="text-sm">Membership</a>
+                <a href="#" className="text-sm">Write</a>
+                <a href="#" className="text-sm">Sign in</a>
+                <Button className="rounded-full bg-black text-white px-5 py-2" style="background-color: black; color:white; border-radius: 5px;">Get started </nav>
+        </div>
+    </header>
+
+    <main class="medium">
+        <h2>Human</h2> <br>
+        <h3>stories & ideas</h3>
+        <p>A place to read, write, and deepen your understanding</p>
+        <Button className="start-reading">Start reading</Button>
+    </main>
+
+    <footer>
+        <a href="hello">hello</a>
+    </footer>
+
+</body>
+
+</html>
